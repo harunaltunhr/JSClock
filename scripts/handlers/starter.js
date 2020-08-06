@@ -1,10 +1,10 @@
 'use strict';
+
 console.log('--- loading handler: _');
+const timeEl= document.querySelector('.time');
+const countryName = document.querySelector('.countryname')
 
-const _ = (event) => {
-
-};
-
+console.log('--- finished handler: _');
 /* handlers define user interactions
 
   they read user input

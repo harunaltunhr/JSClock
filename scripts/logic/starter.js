@@ -1,28 +1,43 @@
 'use strict';
 console.log('--- loading logic: _');
-
-// either expect or assert, up to you
-const _ = chai._;
+debugger;
 
 
-/**
- *
- */
-const _ = () => {
+function setDate() {
+ 
+  const now = new Date();
+  const seconds = now.getSeconds();
+  const mins = now.getMinutes();
+  let hour = (now.getHours()+countrySelector[key]);
+  if(hour>23){
+    hour = hour-24;
+  }
+  timeEl.innerHTML= `${hour}:${mins}:${seconds}`
+  setInterval(setDate,1000);
+}
+function clock() {
 
-};
+country = event.target;
+key = country.innerHTML;
 
 
-// write only one top-level describe in this file
-describe('_', () => {
-  // write as many nested describes as you would like
-  describe('_', () => {
-    // write as many it's as you want in each describe
-    it('_', () => {
-      // have only one assertion inside each it
-    });
-  });
-});
+
+}
+setDate()
+function names(){
+  country = event.target;
+  key = country.innerHTML;
+countryName.innerHTML=key  
+
+}
+function setBackground(){
+  debugger;
+  country = event.target;
+  key = country.innerHTML;
+  document.body.style.backgroundImage= `url(${backgroundSelector[key]})` ;
+}
+
+
 
 /* logic functions are pure functions
 

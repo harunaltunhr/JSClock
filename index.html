@@ -4,12 +4,12 @@
 <head>
   <meta charset='utf8'>
   <title>your project name</title>
-
+  <script src='./scripts/script-variables.js'></script>
   <link href="./style.css" rel="stylesheet" />
 
   <!-- load the testing dependencies -->
-  <script src='./dependencies/chai.js'></script>
-  <script src='./dependencies/describe-it.js'></script>
+  
+ 
 
   <!-- load the rest of your files -->
 
@@ -19,7 +19,30 @@
 <body>
 
 
+<p class='countryname'>BELGIUM</p>
+<h1 class= 'time'></h1>
+<div id='countries'>
+<button class="country">BELGIUM</button>
+<button class="country">TURKEY</button>
+<button class= 'country'>ETHIOPIA</button>
+<button class= 'country'>INDONESIA</button>
+<button class= 'country'>JORDAN</button>
+</div>
 
+
+<div class="clock">
+  <div class="wrap">
+    <span class="hour"></span>
+    <span class="minute"></span>
+    <span class="second"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+  <script src='./scripts/handlers/starter.js'></script>
+  <script src='./scripts/logic/starter.js'></script>
+  <script src='./scripts/listeners/starter.js'></script>
+  
   <!-- Leave this here, it renders the review buttons
       write your code above this script tag  -->
   <script src='./dependencies/review-buttons.js'></script>
